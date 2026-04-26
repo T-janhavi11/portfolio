@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Maithilee Dolharkar | Technology Graduate</title>
+    <meta name="description"
+        content="Portfolio of Maithilee Dolharkar — Technology Graduate specialising in Data Engineering, Software Development, and Data Governance.">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Share+Tech+Mono&family=Inter:wght@300;400;500;600&display=swap"
+        rel="stylesheet">
+
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Matrix Rain Background -->
+    <canvas id="matrix-canvas"></canvas>
+
+    <!-- Circuit Board Grid -->
+    <div class="circuit-bg"></div>
+
+    <!-- Ambient Glow Orbs -->
+    <div class="glow-orb orb-1"></div>
+    <div class="glow-orb orb-2"></div>
+    <div class="glow-orb orb-3"></div>
+
+    <!-- ════ NAVIGATION ════ -->
+    <nav id="navbar">
+        <div class="nav-content container">
+            <a href="#hero" class="logo" id="logo-text">MD_</a>
+            <ul class="nav-links">
+                <li><a href="#about" id="nav-about">about</a></li>
+                <li><a href="#skills" id="nav-skills">skills</a></li>
+                <li><a href="#experience" id="nav-exp">experience</a></li>
+                <li><a href="#projects" id="nav-proj">projects</a></li>
+                <li><a href="#education" id="nav-edu">education</a></li>
+                <li><a href="#contact" id="nav-contact">contact</a></li>
+            </ul>
+            <button class="mobile-menu-btn" id="mobile-btn" aria-label="Toggle menu">
+                <i class="fas fa-bars"></i>
+            </button>
+        </div>
+    </nav>
+
+    <main>
+        <!-- ════ HERO ════ -->
+        <section id="hero">
+            <div class="container">
+                <div class="hero-layout reveal">
+
+                    <!-- LEFT: Terminal content -->
+                    <div class="hero-terminal terminal-card">
+                        <div class="card-header-bar">
+                            <span class="dot dot-r"></span>
+                            <span class="dot dot-y"></span>
+                            <span class="dot dot-g"></span>
+                            <span class="card-filename">portfolio.exe — bash — 120×40</span>
+                        </div>
+
+                        <p class="terminal-prompt"><span>maithilee@portfolio</span>:~$ ./init_profile.sh</p>
+                        <h1 id="hero-name" data-text="MAITHILEE DOLHARKAR">MAITHILEE DOLHARKAR</h1>
+                        <h2 id="hero-title">Technology Graduate | Machine Learning | Data Analysis </h2>
+
+                        <div class="hero-badges" id="contact-info"></div>
+
+                        <div class="hero-stats">
+                            <div class="stat-item">
+                                <span class="stat-number" data-target="2">0</span>
+                                <span class="stat-label">YRS Experience</span>
+                            </div>
+                            <div class="stat-item">
+                                <span class="stat-number" data-target="3">0</span>
+                                <span class="stat-label">Key Projects</span>
+                            </div>
+                        </div>
+
+                        <div class="hero-actions">
+                            <a href="#projects" class="btn btn-primary" id="btn-view-projects"><i
+                                    class="fas fa-code"></i> View Projects</a>
+                            <a href="#contact" class="btn btn-secondary" id="btn-get-touch"><i
+                                    class="fas fa-terminal"></i> Get in Touch</a>
+                        </div>
+                    </div>
+
+                    <!-- RIGHT: Profile image -->
+                    <div class="hero-image-wrap">
+                        <div class="hero-image-frame">
+                            <img id="hero-profile-img" src="image.png" alt="Maithilee Dolharkar"
+                                class="hero-profile-img">
+                            <div class="image-scan-line"></div>
+                        </div>
+                        <div class="image-corner tl"></div>
+                        <div class="image-corner tr"></div>
+                        <div class="image-corner bl"></div>
+                        <div class="image-corner br"></div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- ════ ABOUT ════ -->
+        <section id="about">
+            <div class="container reveal">
+                <h3 class="section-title">Profile</h3>
+                <div class="section-divider"></div>
+                <div class="terminal-card">
+                    <div class="card-header-bar">
+                        <span class="dot dot-r"></span><span class="dot dot-y"></span><span class="dot dot-g"></span>
+                        <span class="card-filename">summary.txt</span>
+                    </div>
+                    <p class="about-text" id="summary-content">Loading...</p>
+                    <div class="availability-badge">
+                        <span class="availability-dot"></span>
+                        <span>AVAILABLE FOR GRADUATE ROLES — COMMENCING JULY 2026</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ════ SKILLS ════ -->
+        <section id="skills">
+            <div class="container">
+                <h3 class="section-title reveal">Tech Stack</h3>
+                <div class="section-divider reveal"></div>
+                <div class="skills-grid reveal-stagger" id="skills-container"></div>
+            </div>
+        </section>
+
+        <!-- ════ EXPERIENCE ════ -->
+        <section id="experience">
+            <div class="container reveal">
+                <h3 class="section-title">Work History</h3>
+                <div class="section-divider"></div>
+                <div class="timeline" id="experience-container"></div>
+            </div>
+        </section>
+
+        <!-- ════ PROJECTS ════ -->
+        <section id="projects">
+            <div class="container">
+                <h3 class="section-title reveal">Projects</h3>
+                <div class="section-divider reveal"></div>
+                <div class="projects-grid reveal-stagger" id="projects-container"></div>
+            </div>
+        </section>
+
+        <!-- ════ EDUCATION ════ -->
+        <section id="education">
+            <div class="container reveal">
+                <h3 class="section-title">Education</h3>
+                <div class="section-divider"></div>
+                <div id="education-container"></div>
+            </div>
+        </section>
+
+        <!-- ════ ACHIEVEMENTS ════ -->
+        <section id="achievements">
+            <div class="container reveal">
+                <h3 class="section-title">Achievements &amp; Volunteering</h3>
+                <div class="section-divider"></div>
+                <div id="achievements-container"></div>
+            </div>
+        </section>
+
+        <!-- ════ CONTACT ════ -->
+        <section id="contact">
+            <div class="container reveal">
+                <h3 class="section-title">Contact</h3>
+                <div class="section-divider"></div>
+                <div class="contact-terminal terminal-card">
+                    <div class="card-header-bar">
+                        <span class="dot dot-r"></span><span class="dot dot-y"></span><span class="dot dot-g"></span>
+                        <span class="card-filename">contact.sh</span>
+                    </div>
+                    <p class="contact-output">whoami</p>
+                    <p class="contact-output"
+                        style="color: var(--neon-green); padding-left: 1rem; margin-bottom: 1rem;">maithilee_dolharkar —
+                        technology_graduate — melbourne_vic</p>
+                    <p class="contact-output">cat availability.txt</p>
+                    <p class="contact-output" style="padding-left: 1rem; margin-bottom: 1rem;">Available for Graduate
+                        Roles commencing <strong style="color: var(--neon-green);">July 2026</strong>. Full Australian
+                        work rights.</p>
+                    <p class="contact-output">echo "Let's connect"</p>
+                    <div class="contact-cta" id="contact-cta"></div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- ════ FOOTER ════ -->
+    <footer>
+        <div class="container footer-content">
+            <p class="footer-text">&copy; <span id="current-year"></span> <span>MAITHILEE DOLHARKAR</span>. ALL RIGHTS
+                RESERVED.</p>
+            <div class="footer-links" id="footer-links"></div>
+        </div>
+    </footer>
+
+    <!-- Scripts — data.js must be first -->
+    <script src="data.js"></script>
+    <script src="script.js"></script>
+
+</body>
+
+</html>
