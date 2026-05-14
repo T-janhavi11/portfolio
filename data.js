@@ -3,8 +3,8 @@ const portfolioData = {
       name: "Janhavi Ajay Talhar",
       title: "AI/ML Engineer | Audio ML | Signal Processing | Real-Time Intelligence",
       location: "Aachen / Bietigheim-Bissingen, Germany",
-      phone: "(+49) 15212687247",
-      email: "jatalhar@gmail.com",
+      phone: "(+49) 015212687247",
+      email: "ja.talharr@gmail.com",
       linkedin: "https://www.linkedin.com/in/janhavi-talhar-0303131a5/",
       profileImage: "assets/images/profile.jpg"
     },
